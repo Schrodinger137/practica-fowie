@@ -1,0 +1,68 @@
+<app-header titulo="Componentes"></app-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button>Activo</ion-button>
+  <ion-button [disabled]="true">Inactivo</ion-button>
+  <ion-button fill="outline">Sin relleno</ion-button>
+  <ion-button>
+    <ion-icon slot="icon-only" name="home"></ion-icon>
+  </ion-button>
+  <ion-button expand="block">Block</ion-button>
+  <ion-button expand="full">Full</ion-button>
+  <ion-button shape="round">Redondo</ion-button>
+  <ion-button color="secondary">Color Secundario</ion-button>
+
+  <hr>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ejemplo de Tarjeta</ion-card-title>
+      <ion-card-subtitle>Subtítulo</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Este es un ejemplo del componente <strong>ion-card</strong> con título y contenido interno.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Opciones</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="settings-outline" slot="start"></ion-icon>
+      <ion-label>Configuración</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="log-out-outline" slot="start"></ion-icon>
+      <ion-label>Salir</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Correo electrónico</ion-label>
+    <ion-input type="email" placeholder="usuario@correo.com"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Notificaciones</ion-label>
+    <ion-toggle color="success" checked></ion-toggle>
+  </ion-item>
+
+  <ion-segment value="inicio" color="primary">
+    <ion-segment-button value="inicio">
+      <ion-label>Inicio</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="favoritos">
+      <ion-label>Favoritos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="perfil">
+      <ion-label>Perfil</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-content>
