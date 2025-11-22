@@ -12,11 +12,12 @@
     (click)="verDetalle(personaje.id)"
     *ngFor="let personaje of personajesRecientes"
   >
-    <img
-      [src]="personaje.imagen"
-      [alt]="personaje.nombre + ' ' + personaje.apellido"
-      style="height: 30vh; width: 60vh"
-    />
+<img
+  [src]="personaje.imagen"
+  [alt]="personaje.nombre + ' ' + personaje.apellido"
+  style="width: 100%; height: auto; object-fit: cover;"
+/>
+
 
     <ion-card-header>
       <ion-card-title>{{personaje.nombre}}</ion-card-title>
